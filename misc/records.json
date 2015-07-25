@@ -1,0 +1,16 @@
+{
+    "time":  {"tod": "Night", "date": "2015-07-24"},
+    "comfort": {"val": "7"},
+    "weather": {"temp-high": "78", "temp-low": "68", "weather": "Mostly Cloudy", "precip": "37"}, 
+    "dress": {
+        "glass": {"bool": 0, "type": null},
+        "outer": {"bool": 0, "type": null},
+        "pants": {"type": "Shorts"},
+        "hat": {"bool": 0, "type": null},
+        "coat": {"bool": 0, "type": null},
+        "shoes": {"type": "Boatshoes"},
+        "socks": {"bool": 0, "type": null},
+        "scarf": {"bool": 0},
+        "inner": {"type": "T-Shirt"}
+    }
+}
