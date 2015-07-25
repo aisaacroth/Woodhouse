@@ -100,6 +100,10 @@ def collect_comfort_data():
 
 
 def main():
+    entries = []
+
+    with open('records.json', mode='r', encoding='utf-8') as weather_file:
+        entries = json.load(weather_file)
 
     data = {}
     
@@ -107,9 +111,10 @@ def main():
     data['weather'] = collect_weather_data()
     data['dress'] = collect_dress_data()
     data['comfort'] = collect_comfort_data()
+    entries.append(data)
 
-    with open('records.json', 'a') as weather_file:
-        json.dump(data, weather_file)
+    with open('records.json', 'w') as weather_file:
+        json.dump(entries, weather_file)
 
 
 if __name__ == '__main__':
